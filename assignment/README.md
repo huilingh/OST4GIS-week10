@@ -10,6 +10,13 @@ Applications are ultimately just tools. What problem or question does
 your application attempt to resolve or grapple with? How does your
 application speak to this problem/question?
 
+
+When doing the Cobbs Creek Community Plan in my planning workshop, I realize that as a neighborhood with comparatively lower income and higher poverty rate, Cobbs Creek residents do not have good access to healthy food options. The obesity and diabete rates in Cobbs Creek are higher than city average, which lead to my idea for this application - it is harder for poor people to access and afford a healthy lifestyle, so what about building a website that tells users where they can find affordable healthy food?
+
+The purposes of this application are:
+a. Provide healthy food options for users - locations, types, size, price, etc. (depends on what kind of data I can get)
+b. Provide information for planning - which areas lack of healthy food options (groceries, healthy corner stores, etc.), where the city should promote or invest in more healthy food.
+
 ## The data
 
 Geospatial applications are all about working with data. What datasets
@@ -17,6 +24,16 @@ would you plan/like to use? If the data you'll be working with isn't
 already stored in a way that you can use, how will you be storing your data?
 (If it is too large for a javascript application, using a backend might
 be necessary)
+
+
+There are two existing datasets that can be used directly:
+a. Walkable access for healthy food - blockgroup level
+b. Inspection of business licenses - can filter the license types of "food preparing and serving" and business names with "grocery" in them
+
+A existing dataset that may be used:
+Locations of farmers markets
+
+There is also an Yelp API on OpenDataPhilly that may be useful, but I don't know how to deal with API, yet - probably will use it if I learn how to use API
 
 ## Technologies used
 
@@ -63,4 +80,3 @@ that you think would be useful? What technologies not covered seem exciting to
 you (you don't necessarily have to fully understand what they're for,
 this is a chance for you to get our help interpreting a technology's
 purpose/usage).
-
