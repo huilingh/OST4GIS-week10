@@ -172,6 +172,10 @@ Media Queries
 ============= */
 
 @media screen and (min-width: 480px) and (max-width: 800px) {
+  .leftbar {
+    display: none;
+  }
+
   .sidebar {
       position: absolute;
       left: 0px;
@@ -196,12 +200,20 @@ Media Queries
 }
 
 @media screen and (max-width: 479px) {
+  .leftbar {
+    display: none;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
   .map {
-      position: absolute;
-      right: 0px;
-      left: 0px;
-      height: 100%;
-      top: 0;
+    position: absolute;
+    right: 0px;
+    left: 0px;
+    height: 100%;
+    top: 0;
   }
     /*.item {
         background-color: red;
