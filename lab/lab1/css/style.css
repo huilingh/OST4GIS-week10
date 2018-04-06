@@ -21,7 +21,8 @@ body {
   overflow-y: auto;
   padding: 20px;
   padding-bottom: 60px;
-  background-color: #475075;
+  background-color: #2b3c52;
+  text-align: center;
 }
 
 #on-left {
@@ -138,6 +139,33 @@ body {
 #smalltext-modal {
   font-size: 12px;
 }
+
+.modal fade {
+  z-index: 100;
+}
+
+. dropdown-menu {
+  z-index: 100;
+}
+
+. dropdown-item {
+  text-align: right;
+}
+
+#v-pills-tab {
+  text-align: left;
+}
+
+#v-pills-tab>a {
+   color: #ffffff;
+}
+
+#v-pills-tab>a.active,
+#v-pills-tab>a:hover,
+#v-pills-tab>a:focus {
+   background-color: #5dc6df;
+}
+
 
 /* =============
 Media Queries

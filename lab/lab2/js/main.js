@@ -30,13 +30,23 @@ var Stamen_TonerLite = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolab
 
 var cartoUserName = 'huilingh';
 var cartoVizId = 'e6200960-28a1-4784-b103-8783debda371';
-var trail = 
+var analysis = "https://raw.githubusercontent.com/huilingh/OST4GIS-week10/master/lab/lab2/nyc_subway_entrance.geojson"
 
 var layerUrl = 'https://'+cartoUserName+'.carto.com/api/v2/viz/'+cartoVizId+'/viz.json';
 
 cartodb.createLayer(map, layerUrl)
   .on('done', function(layer) {
     layer.addTo(map);
+    $.ajax(analysis).done(function(data){
+    var parsedAnalysis = JSON.parse(data);
+    Buffer = L.geoJson(parsedAnalysis, {
+      style: {
+        "color": "#ff7800",
+        "weight": 2,
+        "opacity": 0.65
+      }
+    }).addTo(map);
+  })
   }).on('error', function(err) {
     console.log(err);
   });
